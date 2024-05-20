@@ -1,17 +1,12 @@
 package opp1;
 
-public class ValueDataMain {
+public class ValueObjectMain {
 
     public static void main(String[] args) {
         ValueData valueData = new ValueData();
-
-        add(valueData);
-        add(valueData);
-        add(valueData);
+        valueData.add();
+        valueData.add();
+        valueData.add();
     }
 
-    static void add(ValueData valueData) {
-        valueData.value++;
-        System.out.println("숫자 증가 value = " + valueData.value);
-    }
 }
